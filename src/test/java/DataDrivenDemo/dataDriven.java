@@ -3,15 +3,20 @@ package DataDrivenDemo;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class dataDriven {
-
-	public static void main(String[] args) throws IOException {
+	
+	public ArrayList<String> getData(String testcase) throws IOException
+	{
+		ArrayList<String> a = new ArrayList<String>();
 		
 		FileInputStream file = new FileInputStream("C:\\Users\\hp\\eclipse-workspace\\TestNGpractice\\Data\\Book1.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -42,18 +47,34 @@ public class dataDriven {
 				while(rows.hasNext())
 				{
 					Row r = rows.next();
-					if(r.getCell(column).getStringCellValue().equalsIgnoreCase("Profile"))
+					if(r.getCell(column).getStringCellValue().equalsIgnoreCase(testcase))
 					{
 						Iterator<Cell> cv = r.cellIterator();
 						while(cv.hasNext())
 						{
-							System.out.println(cv.next().getStringCellValue());
+							Cell cr = cv.next();
+							if(cr.getCellType() == CellType.STRING)
+							{
+								a.add(cr.getStringCellValue());
+							}
+							else {
+								a.add(NumberToTextConverter.toText(cr.getNumericCellValue()));
+								
+							}
 						}
 					}
 				}
 				
 			}
 		}
+		
+		return a;
+		//check sample testcase file, there we got the data.
+	}
+
+	public static void main(String[] args) throws IOException {
+		
+
 
 	}
 
