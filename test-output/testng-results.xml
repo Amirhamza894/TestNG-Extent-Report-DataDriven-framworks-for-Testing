@@ -1,21 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="14" total="20" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-04T18:33:22 PKT" name="Default suite" finished-at="2021-12-04T18:33:34 PKT" duration-ms="12251">
+  <suite started-at="2022-01-01T07:43:31 PST" name="Suite" finished-at="2022-01-01T07:43:31 PST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2021-12-04T18:33:22 PKT" name="Default test" finished-at="2021-12-04T18:33:34 PKT" duration-ms="12251">
-      <class name="ExtentReport.extentReportDemo">
-        <test-method is-config="true" signature="config()[pri:0, instance:ExtentReport.extentReportDemo@4a7f959b]" started-at="2021-12-04T18:33:22 PKT" name="config" finished-at="2021-12-04T18:33:23 PKT" duration-ms="472" status="PASS">
+  </suite> <!-- Suite -->
+  <suite started-at="2022-01-01T07:43:31 PST" name="Suite (1)" finished-at="2022-01-01T07:43:31 PST" duration-ms="12">
+    <groups>
+      <group name="regression">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@2a798d51]" name="login" class="Practice.Self.GroupsTestNG"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@2a798d51]" name="login" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.logout()[pri:1, instance:Practice.Self.GroupsTestNG@2a798d51]" name="logout" class="Practice.Self.GroupsTestNG"/>
+      </group> <!-- smoke -->
+      <group name="user-account-usage">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@2a798d51]" name="login" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.logout()[pri:1, instance:Practice.Self.GroupsTestNG@2a798d51]" name="logout" class="Practice.Self.GroupsTestNG"/>
+      </group> <!-- user-account-usage -->
+    </groups>
+    <test started-at="2022-01-01T07:43:31 PST" name="Test" finished-at="2022-01-01T07:43:31 PST" duration-ms="12">
+      <class name="Practice.Self.GroupsTestNG">
+        <test-method signature="logout()[pri:1, instance:Practice.Self.GroupsTestNG@2a798d51]" started-at="2022-01-01T07:43:31 PST" name="logout" finished-at="2022-01-01T07:43:31 PST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- config -->
-        <test-method signature="intialDemo()[pri:0, instance:ExtentReport.extentReportDemo@4a7f959b]" started-at="2021-12-04T18:33:23 PKT" name="intialDemo" finished-at="2021-12-04T18:33:34 PKT" duration-ms="11721" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method signature="login()[pri:2, instance:Practice.Self.GroupsTestNG@2a798d51]" started-at="2022-01-01T07:43:31 PST" name="login" finished-at="2022-01-01T07:43:31 PST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intialDemo -->
-      </class> <!-- ExtentReport.extentReportDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+      </class> <!-- Practice.Self.GroupsTestNG -->
+      <class name="Practice.Self.TestNgLog">
+        <test-method is-config="true" signature="aftergroup()[pri:0, instance:Practice.Self.TestNgLog@6b81ce95]" started-at="2022-01-01T07:43:31 PST" name="aftergroup" finished-at="2022-01-01T07:43:31 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftergroup -->
+      </class> <!-- Practice.Self.TestNgLog -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2022-01-01T07:43:14 PST" name="Suite (0)" finished-at="2022-01-01T07:43:30 PST" duration-ms="16408">
+    <groups>
+      <group name="regression">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@479d31f3]" name="login" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.profilepic()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" name="profilepic" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.profilepostarticle()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" name="profilepostarticle" class="Practice.Self.GroupsTestNG"/>
+        <method signature="verifyTitle.title()[pri:0, instance:Practice.Self.verifyTitle@c267ef4]" name="title" class="Practice.Self.verifyTitle"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@479d31f3]" name="login" class="Practice.Self.GroupsTestNG"/>
+      </group> <!-- smoke -->
+      <group name="user-account-usage">
+        <method signature="GroupsTestNG.login()[pri:2, instance:Practice.Self.GroupsTestNG@479d31f3]" name="login" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.profilepic()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" name="profilepic" class="Practice.Self.GroupsTestNG"/>
+        <method signature="GroupsTestNG.profilepostarticle()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" name="profilepostarticle" class="Practice.Self.GroupsTestNG"/>
+      </group> <!-- user-account-usage -->
+    </groups>
+    <test started-at="2022-01-01T07:43:14 PST" name="Test" finished-at="2022-01-01T07:43:30 PST" duration-ms="16408">
+      <class name="Practice.Self.verifyTitle">
+        <test-method signature="title()[pri:0, instance:Practice.Self.verifyTitle@c267ef4]" started-at="2022-01-01T07:43:14 PST" name="title" finished-at="2022-01-01T07:43:30 PST" duration-ms="16270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title -->
+      </class> <!-- Practice.Self.verifyTitle -->
+      <class name="Practice.Self.GroupsTestNG">
+        <test-method signature="profilepic()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" started-at="2022-01-01T07:43:30 PST" name="profilepic" finished-at="2022-01-01T07:43:30 PST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profilepic -->
+        <test-method signature="profilepostarticle()[pri:0, instance:Practice.Self.GroupsTestNG@479d31f3]" started-at="2022-01-01T07:43:30 PST" name="profilepostarticle" finished-at="2022-01-01T07:43:30 PST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profilepostarticle -->
+        <test-method signature="login()[pri:2, instance:Practice.Self.GroupsTestNG@479d31f3]" started-at="2022-01-01T07:43:30 PST" name="login" finished-at="2022-01-01T07:43:30 PST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Practice.Self.GroupsTestNG -->
+      <class name="Practice.Self.TestNgLog">
+        <test-method is-config="true" signature="beforeGroup()[pri:0, instance:Practice.Self.TestNgLog@c33b74f]" started-at="2022-01-01T07:43:14 PST" name="beforeGroup" finished-at="2022-01-01T07:43:14 PST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeGroup -->
+      </class> <!-- Practice.Self.TestNgLog -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
 </testng-results>
